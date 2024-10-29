@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="images/joda.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="stronacocisie.css">
+</head>
+<script src="stronacocisie.js" type="text/javascript"></script>
+<body bgcolor="">
+    <header class="baner">
+        <h1>Projekt github</h1>
+    </header>
+    <section class="lewo">
+        <h2 align="center">Wybierz obrazek:</h2><br>
+        <h3><label>Szatanik Szymon<input type="radio" name="obraz" id="szymon" onclick="fobraz()"></label></h3>
+        <h3><label>Kaz Trzaskowski<input type="radio" name="obraz" id="kaz" onclick="fobraz()"></label></h3>
+        <h3><label>Karol Floryda<input type="radio" name="obraz" id="karol" onclick="fobraz()"></label></h3>
+        <h3><label>Marcin Cesarz<input type="radio" name="obraz" id="cesarz" onclick="fobraz()"></label></h3>
+        <br><h2 align="center">Wybierz inne opcję</h2><br>
+        <h3>Wybierz kolor tła:  
+            <input type="color" onblur="fkolor()" id="kolortła">
+        </h3>
+        <h3>Wybierz czcionkę:
+            <select name="" id="czcionki" onclick="fczcionka()">
+                <option value="">Arial</option>
+                <option value="">Courier New</option>
+                <option value="">Verdana</option>
+                <option value="">Lucida Sans</option>
+            </select>
+        </h3>
+        <h3>Wybierz rozmiar tekstu:
+            <input type="text" value="100%" size="4" onblur="frozmiar()" id="rozmair">
+        </h3>
+        <h3>
+            Wybierz kolor tekstu:
+            <input type="color" id="ktekstu" onblur="fkteksu()">
+        </h3>
+        <h3>Wybierz nagrody jakie mogą być pod obrazkiem:</h3>
+        <h3><label><input type="checkbox" name="" id="piosenka" checked>losowa Piosenka</label></h3>
+        <h3><label><input type="checkbox" name="" id="strona">losowa strona</label></h3>
+        <h3><label><input type="checkbox" name="" id="zart">żarcik(ruletka)</label></h3>
+    </section>
+    <section class="prawo" id="prawa">
+        <h2 id="wynik"></h2>
+        <h2 id="wynik2" align="center">Sprawdź swoje szczęście</h2>
+        <h2 id="wynik2" align="center">Kliknij w obrazek</h2>
+    </section>
+    <footer class="stopka">
+        <h1>Autor: Szymon Wojtkowiak 4B</h1>
+    </footer>
+</body>
+</html>
